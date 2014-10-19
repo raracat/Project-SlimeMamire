@@ -7,7 +7,7 @@ public class Pusher : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		Vector3 offset = new Vector3 (0, 0, Mathf.Sin (Time.time) * 2);
+		Vector3 offset = new Vector3 (0, 0, Mathf.Sin (Time.time) * 0.4f);
 		rigidbody.MovePosition (origin + offset);
 	}
 

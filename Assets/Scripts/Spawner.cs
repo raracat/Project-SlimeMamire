@@ -12,13 +12,13 @@ public class Spawner : MonoBehaviour {
 		if (Input.GetButtonDown ("Fire1")){
 			//クリックの場合
 			clickPosition = Input.mousePosition;
-			clickPosition.z = 10;
+			clickPosition.z = 2;
 
 			//タッチの場合
 
 
 			GameObject slime = Instantiate(prefab, Camera.main.ScreenToWorldPoint(clickPosition), Quaternion.identity) as GameObject;
-			slime.rigidbody.velocity = new Vector3(0.0f,8.0f, 10.0f);
+			slime.rigidbody.velocity = new Vector3(0.0f,3.0f, 6.0f);
 
 //			Instantiate (prefab, transform.position + offset, transform.rotation);
 //			prefab.rigidbody.AddForce(0, 0, 10);
