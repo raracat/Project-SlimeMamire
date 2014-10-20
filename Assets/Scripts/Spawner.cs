@@ -23,7 +23,8 @@ public class Spawner : MonoBehaviour {
 //			Instantiate (prefab, transform.position + offset, transform.rotation);
 //			prefab.rigidbody.AddForce(0, 0, 10);
 
-//			Score.score--;
+			//発射したらScoreを1減らす
+			Score.score--;
 		}
 	}
 }
